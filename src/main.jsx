@@ -7,7 +7,7 @@ import "./main.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AppProvider>
-      <App quebrando-aplicacao /\/\/\/\ />
+      <App />
     </AppProvider>
   </StrictMode>
 );
