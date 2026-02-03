@@ -55,6 +55,8 @@ function ProjectsList() {
     }
   }, []);
 
+  console.log(projects[0].thumb);
+
   return (
     <div className="projects-section">
       <div className="projects-hero">
