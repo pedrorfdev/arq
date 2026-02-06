@@ -1,66 +1,109 @@
-# Architecture
+# 🏛️ Modern Arq Portfolio
 
-Um site de portfólio moderno e responsivo construído com React, apresentando projetos arquitetônicos com suporte multi-idioma e recursos interativos.
+<div align="center">
 
-## Funcionalidades
+![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6.1.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-7.1.5-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-- **Suporte Multi-idioma**: Alternância entre português e inglês com preferência do usuário persistente
-- **Vitrine de Projetos**: Listagem dinâmica de projetos com imagens, títulos e descrições
-- **Sistema de Favoritos**: Salvar e gerenciar projetos favoritos com armazenamento baseado em sessão
-- **Design Responsivo**: Interface amigável para dispositivos móveis com menu de navegação adaptativo
-- **Conteúdo Dinâmico**: Conteúdo obtido de API externa para fácil gerenciamento
-- **Interface Moderna**: Design limpo e profissional com experiência de usuário fluida
+**Um portfólio moderno e responsivo para projetos arquitetônicos**
 
-## Stack Tecnológico
+[✨ Funcionalidades](#-funcionalidades) • [🚀 Como Começar](#-como-começar) • [📁 Estrutura](#-estrutura-do-projeto) • [🔧 Tecnologias](#-stack-tecnológico)
 
-- **React** - Biblioteca de interface
-- **React Router DOM** - Roteamento no lado do cliente
-- **Vite** - Ferramenta de build e servidor de desenvolvimento
-- **Context API** - Gerenciamento de estado para estado global da aplicação
-- **ESLint** - Qualidade de código e linting
+</div>
 
-## Como Começar
+---
 
-### Pré-requisitos
+## 📖 Sobre o Projeto
 
-- Node.js (v16 ou superior)
-- npm ou yarn
+Modern Arq Portfolio é uma aplicação web moderna desenvolvida com React, projetada para exibir projetos arquitetônicos de forma elegante e profissional. O projeto oferece uma experiência de usuário fluida com suporte multi-idioma, sistema de favoritos e design totalmente responsivo.
 
-### Instalação
+## ✨ Funcionalidades
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/yourusername/dnc-arch.git
-cd dnc-arch
+### 🌍 Multi-idioma
+- Alternância entre **Português** e **Inglês**
+- Preferência do usuário salva no localStorage
+- Interface completamente traduzida
+
+### 🎨 Vitrine de Projetos
+- Listagem dinâmica de projetos arquitetônicos
+- Imagens, títulos e descrições detalhadas
+- Visualização organizada e profissional
+
+### ⭐ Sistema de Favoritos
+- Salvar e gerenciar projetos favoritos
+- Armazenamento baseado em sessão
+- Interface intuitiva para marcação
+
+### 📱 Design Responsivo
+- Interface adaptada para todos os dispositivos
+- Menu de navegação adaptativo
+- Experiência otimizada em mobile, tablet e desktop
+
+### 🔄 Conteúdo Dinâmico
+- Integração com API externa
+- Gerenciamento facilitado de conteúdo
+- Atualizações em tempo real
+
+### 🎯 Interface Moderna
+- Design limpo e profissional
+- Animações suaves
+- Experiência de usuário fluida
+
+## 🚀 Como Começar
+
+### 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **Node.js** (v16 ou superior)
+- **npm** ou **yarn**
+
+### 🔧 Instalação
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/pedrorfdev/Modern-Arq-Portfolio.git
+   cd modern-arq-portfolio
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor de desenvolvimento:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse a aplicação:**
+   ```
+   http://localhost:5173
+   ```
+
+## 📜 Scripts Disponíveis
+
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Constrói o projeto para produção |
+| `npm run preview` | Visualiza a build de produção localmente |
+| `npm run lint` | Executa ESLint para verificar a qualidade do código |
+
+## 📁 Estrutura do Projeto
+
 ```
-
-2. Instale as dependências:
-```bash
-npm install
-```
-
-3. Inicie o servidor de desenvolvimento:
-```bash
-npm run dev
-```
-
-4. Abra seu navegador e acesse `http://localhost:5173`
-
-## Scripts Disponíveis
-
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Constrói o projeto para produção
-- `npm run preview` - Visualiza a build de produção localmente
-- `npm run lint` - Executa ESLint para verificar a qualidade do código
-
-## Estrutura do Projeto
-
-```
-dnc-arch/
-├── public/              # Arquivos estáticos
-├── src/
-│   ├── assets/          # Imagens e ícones
-│   ├── components/      # Componentes React reutilizáveis
+modern-arq-portfolio/
+├── 📂 public/              # Arquivos estáticos
+│   ├── about.jpg
+│   ├── contact.jpg
+│   ├── hero.jpg
+│   └── projects.jpg
+│
+├── 📂 src/
+│   ├── 📂 assets/          # Imagens e ícones
+│   ├── 📂 components/      # Componentes React reutilizáveis
 │   │   ├── AboutText/
 │   │   ├── Banner/
 │   │   ├── Button/
@@ -70,36 +113,61 @@ dnc-arch/
 │   │   ├── Hero/
 │   │   ├── LoadingSpinner/
 │   │   └── ProjectsList/
-│   ├── contexts/        # Provedores de Context do React
-│   ├── pages/           # Componentes de página
-│   ├── services/        # Serviços de API
-│   ├── utils/           # Funções utilitárias
-│   ├── App.jsx          # Componente principal da aplicação
-│   └── main.jsx         # Ponto de entrada da aplicação
+│   ├── 📂 contexts/        # Provedores de Context do React
+│   ├── 📂 pages/           # Componentes de página
+│   │   ├── Home.jsx
+│   │   ├── About.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   ├── 📂 services/        # Serviços de API
+│   ├── 📂 utils/           # Funções utilitárias
+│   ├── App.jsx             # Componente principal
+│   ├── main.jsx            # Ponto de entrada
+│   └── main.css            # Estilos globais
+│
 ├── package.json
-└── vite.config.js
+├── vite.config.js
+└── README.md
 ```
 
-## Integração com API
+## 🔧 Stack Tecnológico
 
-A aplicação obtém conteúdo de uma API externa:
+<div align="center">
+
+| Tecnologia | Versão | Propósito |
+|------------|--------|-----------|
+| **React** | 19.0.0 | Biblioteca de interface de usuário |
+| **React Router DOM** | 7.1.5 | Roteamento no lado do cliente |
+| **Vite** | 6.1.0 | Ferramenta de build e servidor de desenvolvimento |
+| **Context API** | - | Gerenciamento de estado global |
+| **ESLint** | 9.19.0 | Qualidade de código e linting |
+
+</div>
+
+## 🔌 Integração com API
+
+A aplicação obtém conteúdo de uma API externa para facilitar o gerenciamento:
+
 - **URL Base**: `https://dnc-react-api.vercel.app/files/`
 - **Endpoints**:
-  - `/projects` - Recupera dados dos projetos
+  - `/projects` - Recupera dados dos projetos arquitetônicos
   - `/webtext` - Recupera conteúdo de texto multi-idioma
 
-## Funcionalidades em Detalhe
+## 📚 Funcionalidades em Detalhe
 
-### Alternância de Idioma
-Os usuários podem alternar entre português e inglês. O idioma selecionado é salvo no localStorage e persiste entre sessões.
+### 🌐 Alternância de Idioma
 
-### Favoritos de Projetos
-Os usuários podem marcar projetos como favoritos. As seleções de favoritos são armazenadas no sessionStorage e persistem durante a sessão do navegador.
+Os usuários podem alternar entre português e inglês através de botões no header e footer. O idioma selecionado é salvo no `localStorage` e persiste entre sessões do navegador.
 
-### Navegação Responsiva
-O cabeçalho inclui um menu de navegação responsivo para dispositivos móveis que se adapta a diferentes tamanhos de tela.
+### ⭐ Favoritos de Projetos
 
-## Build para Produção
+Os usuários podem marcar projetos como favoritos clicando no ícone de coração. As seleções de favoritos são armazenadas no `sessionStorage` e persistem durante a sessão do navegador.
+
+### 📱 Navegação Responsiva
+
+O cabeçalho inclui um menu de navegação responsivo para dispositivos móveis que se adapta automaticamente a diferentes tamanhos de tela, proporcionando uma experiência otimizada em todos os dispositivos.
+
+## 🏗️ Build para Produção
 
 Para criar uma build otimizada para produção:
 
@@ -107,8 +175,18 @@ Para criar uma build otimizada para produção:
 npm run build
 ```
 
-A saída da build estará no diretório `dist/`, pronta para implantação.
+A saída da build estará no diretório `dist/`, pronta para implantação em qualquer serviço de hospedagem estática.
 
-## Licença
+## 📄 Licença
 
-Este projeto é privado e destinado a fins de portfólio.
+Este projeto é privado e destinado a fins de portfólio pessoal.
+
+---
+
+<div align="center">
+
+**Desenvolvido com ❤️ para exibir projetos arquitetônicos**
+
+⭐ Se este projeto foi útil, considere dar uma estrela!
+
+</div>
